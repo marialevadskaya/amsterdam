@@ -246,6 +246,7 @@ body {
 .main-block {
   position: relative;
   margin: 0 0 170px 0;
+  height: 740px;
 }
 @media (max-width: 480px) {
   .main-block {
@@ -360,6 +361,11 @@ body {
   font-family: "Anglecia Pro Display";
   font-size: 50px;
   line-height: 1;
+}
+@media (max-width: 768px) {
+  .title-2 {
+    font-size: 45px;
+  }
 }
 @media (max-width: 480px) {
   .title-2 {
@@ -538,6 +544,11 @@ body {
   margin: 0 0 170px 0;
   overflow: hidden;
 }
+@media (max-width: 480px) {
+  .feedback {
+    margin: 0;
+  }
+}
 @media (max-width: 1000px) {
   .feedback {
     height: 440px;
@@ -568,23 +579,23 @@ body {
     height: 360px;
   }
 }
+@media (max-width: 330px) {
+  .feedback {
+    height: 371px;
+  }
+}
 .feedback__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 70px 0;
 }
+.feedback__btn {
+  margin: 14px 0 0 0;
+}
 @media (max-width: 480px) {
   .feedback__btn {
     display: none;
-  }
-}
-.feedback__btn-mob {
-  display: none;
-}
-@media (max-width: 480px) {
-  .feedback__btn-mob {
-    display: block;
   }
 }
 .feedback__link {
@@ -679,6 +690,30 @@ body {
   .title-3 {
     font-size: 20px;
   }
+}
+
+.feedback-btn {
+  display: none;
+}
+@media (max-width: 480px) {
+  .feedback-btn {
+    display: block;
+    margin: 60px 0 170px 0;
+  }
+}
+.feedback-btn__link {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  text-align: center;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+.feedback-btn__link:hover {
+  color: #14131C;
+  background-color: #FAFAFA;
 }
 
 .booking {
